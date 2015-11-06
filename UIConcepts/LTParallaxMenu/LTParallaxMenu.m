@@ -34,7 +34,6 @@
 - (void)animationInit {
     UIView *xibView = nil;
     //load xib
-    NSLog(@"%@", [NSBundle mainBundle]);
     NSArray *objects = [[NSBundle mainBundle] loadNibNamed:@"LTParallaxMenuView"
                                                      owner:self
                                                    options:nil];

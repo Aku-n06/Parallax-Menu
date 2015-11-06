@@ -61,7 +61,6 @@
 #pragma mark - menu animation implementation
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    NSLog(@"scrollView.contentOffset.y = %f", scrollView.contentOffset.y );
     if (scrollView.contentOffset.y > 200)
         [self.controlsView setOpenValue:@(0)];
     else {
