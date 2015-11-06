@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LTParallaxMenu.h"
+#import "ASParallaxMenu.h"
 
 @interface ViewController1 : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 
-@property (nonatomic, weak) IBOutlet LTParallaxMenu *controlsView;
+@property (nonatomic, weak) IBOutlet ASParallaxMenu *controlsView;
 
 @property (nonatomic, weak) IBOutlet UITableView *table;
 

@@ -1,5 +1,5 @@
 //
-//  LTParallaxItem.h
+//  ASParallaxItem.h
 //  UIConcepts
 //
 //  Created by Alberto Scampini on 05/11/2015.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LTParallaxItem : NSObject
+@interface ASParallaxItem : NSObject
 
 @property (nonatomic, retain) NSNumber *xClose;
 @property (nonatomic, retain) NSNumber *yClose;

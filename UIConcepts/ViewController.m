@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //add observer to menu item selected from LTParallaxMenu
+    //add observer to menu item selected from ASParallaxMenu
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuItemSelected:) name:MENUITEMSELECTED object:nil];
     //add observer to slider control
     [self.slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];

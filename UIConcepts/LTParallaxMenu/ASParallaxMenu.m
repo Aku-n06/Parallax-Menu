@@ -1,22 +1,22 @@
 //
-//  LTParallaxMenu.m
+//  ASParallaxMenu.m
 //  UIConcepts
 //
 //  Created by Alberto Scampini on 05/11/2015.
 //  Copyright © 2015 Alberto Scampini. All rights reserved.
 //
 
-#import "LTParallaxMenu.h"
-#import "LTParallaxItem.h"
+#import "ASParallaxMenu.h"
+#import "ASParallaxItem.h"
 
-@interface LTParallaxMenu ()
+@interface ASParallaxMenu ()
 
 @property (nonatomic, retain) UIView *contentView;
 @property (nonatomic, retain) NSNumber *originY;
 
 @end
 
-@implementation LTParallaxMenu {
+@implementation ASParallaxMenu {
     NSMutableArray *animationsArray;
 }
 
@@ -34,7 +34,7 @@
 - (void)animationInit {
     UIView *xibView = nil;
     //load xib
-    NSArray *objects = [[NSBundle mainBundle] loadNibNamed:@"LTParallaxMenuView"
+    NSArray *objects = [[NSBundle mainBundle] loadNibNamed:@"ASParallaxMenuView"
                                                      owner:self
                                                    options:nil];
     //verify
@@ -63,7 +63,7 @@
     for (UIView *openedItem in [self.contentView subviews]){
         if (openedItem.tag > 0 && openedItem.tag < 100) {
             
-            LTParallaxItem *newItem =[LTParallaxItem new];
+            ASParallaxItem *newItem =[ASParallaxItem new];
             //register start state
             float xOpen = openedItem.frame.origin.x;
             float yOpen = openedItem.frame.origin.y;
@@ -119,7 +119,7 @@
                             self.frame.size.height);
     //transform controls
     [UIView animateWithDuration:0.1 animations:^{
-         for (LTParallaxItem *menuItem in animationsArray){
+         for (ASParallaxItem *menuItem in animationsArray){
              UIView *menuView = [self viewWithTag:[menuItem.tagOpen integerValue]];
              menuView.frame = CGRectMake([menuItem.xClose floatValue] + ([menuItem.xDelta floatValue] * [multiplier floatValue]),
                                          [menuItem.yClose floatValue] + ([menuItem.yDelta floatValue] * [multiplier floatValue]),
