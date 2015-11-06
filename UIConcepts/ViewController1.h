@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ViewController1.h
 //  UIConcepts
 //
 //  Created by Alberto Scampini on 05/11/2015.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "LTParallaxMenu.h"
 
-@interface ViewController : UIViewController
+@interface ViewController1 : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
 
 @property (nonatomic, weak) IBOutlet LTParallaxMenu *controlsView;
 
-@property (nonatomic, weak) IBOutlet UISlider *slider;
+@property (nonatomic, weak) IBOutlet UITableView *table;
 
 @end
-

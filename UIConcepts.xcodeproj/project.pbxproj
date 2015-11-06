@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		789D08531BEBAE5400783859 /* LTParallaxItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 789D08521BEBAE5400783859 /* LTParallaxItem.m */; };
+		789D08561BEBBF6B00783859 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 789D08551BEBBF6B00783859 /* ViewController1.m */; };
 		78F1F7221BEB46A5008BD9AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1F7211BEB46A5008BD9AF /* main.m */; };
 		78F1F7251BEB46A5008BD9AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1F7241BEB46A5008BD9AF /* AppDelegate.m */; };
 		78F1F7281BEB46A5008BD9AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1F7271BEB46A5008BD9AF /* ViewController.m */; };
@@ -15,6 +17,9 @@
 		78F1F7301BEB46A5008BD9AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F1F72E1BEB46A5008BD9AF /* LaunchScreen.storyboard */; };
 		78F1F73B1BEB46A5008BD9AF /* UIConceptsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1F73A1BEB46A5008BD9AF /* UIConceptsTests.m */; };
 		78F1F7461BEB46A5008BD9AF /* UIConceptsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1F7451BEB46A5008BD9AF /* UIConceptsUITests.m */; };
+		78F1F7561BEB4724008BD9AF /* LTParallaxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1F7551BEB4724008BD9AF /* LTParallaxMenu.m */; };
+		78F1F7581BEB474D008BD9AF /* LTParallaxMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F1F7571BEB474D008BD9AF /* LTParallaxMenuView.xib */; };
+		78F1F75E1BEB4B9B008BD9AF /* LTParallaxMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1F75D1BEB4B9B008BD9AF /* LTParallaxMenuItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		789D08511BEBAE5400783859 /* LTParallaxItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTParallaxItem.h; path = LTParallaxMenu/LTParallaxItem.h; sourceTree = "<group>"; };
+		789D08521BEBAE5400783859 /* LTParallaxItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LTParallaxItem.m; path = LTParallaxMenu/LTParallaxItem.m; sourceTree = "<group>"; };
+		789D08541BEBBF6B00783859 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		789D08551BEBBF6B00783859 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		78F1F71D1BEB46A5008BD9AF /* UIConcepts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIConcepts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F1F7211BEB46A5008BD9AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78F1F7231BEB46A5008BD9AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,11 @@
 		78F1F7411BEB46A5008BD9AF /* UIConceptsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIConceptsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F1F7451BEB46A5008BD9AF /* UIConceptsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIConceptsUITests.m; sourceTree = "<group>"; };
 		78F1F7471BEB46A5008BD9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78F1F7541BEB4724008BD9AF /* LTParallaxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTParallaxMenu.h; path = LTParallaxMenu/LTParallaxMenu.h; sourceTree = "<group>"; };
+		78F1F7551BEB4724008BD9AF /* LTParallaxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LTParallaxMenu.m; path = LTParallaxMenu/LTParallaxMenu.m; sourceTree = "<group>"; };
+		78F1F7571BEB474D008BD9AF /* LTParallaxMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTParallaxMenuView.xib; sourceTree = "<group>"; };
+		78F1F75C1BEB4B9B008BD9AF /* LTParallaxMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTParallaxMenuItem.h; path = UIConcepts/LTParallaxMenu/LTParallaxMenuItem.h; sourceTree = "<group>"; };
+		78F1F75D1BEB4B9B008BD9AF /* LTParallaxMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LTParallaxMenuItem.m; path = UIConcepts/LTParallaxMenu/LTParallaxMenuItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,8 @@
 		78F1F7141BEB46A5008BD9AF = {
 			isa = PBXGroup;
 			children = (
+				78F1F75C1BEB4B9B008BD9AF /* LTParallaxMenuItem.h */,
+				78F1F75D1BEB4B9B008BD9AF /* LTParallaxMenuItem.m */,
 				78F1F71F1BEB46A5008BD9AF /* UIConcepts */,
 				78F1F7391BEB46A5008BD9AF /* UIConceptsTests */,
 				78F1F7441BEB46A5008BD9AF /* UIConceptsUITests */,
@@ -105,6 +121,9 @@
 				78F1F7241BEB46A5008BD9AF /* AppDelegate.m */,
 				78F1F7261BEB46A5008BD9AF /* ViewController.h */,
 				78F1F7271BEB46A5008BD9AF /* ViewController.m */,
+				789D08541BEBBF6B00783859 /* ViewController1.h */,
+				789D08551BEBBF6B00783859 /* ViewController1.m */,
+				78F1F7531BEB46AF008BD9AF /* controls view */,
 				78F1F7291BEB46A5008BD9AF /* Main.storyboard */,
 				78F1F72C1BEB46A5008BD9AF /* Assets.xcassets */,
 				78F1F72E1BEB46A5008BD9AF /* LaunchScreen.storyboard */,
@@ -138,6 +157,18 @@
 				78F1F7471BEB46A5008BD9AF /* Info.plist */,
 			);
 			path = UIConceptsUITests;
+			sourceTree = "<group>";
+		};
+		78F1F7531BEB46AF008BD9AF /* controls view */ = {
+			isa = PBXGroup;
+			children = (
+				78F1F7541BEB4724008BD9AF /* LTParallaxMenu.h */,
+				78F1F7551BEB4724008BD9AF /* LTParallaxMenu.m */,
+				78F1F7571BEB474D008BD9AF /* LTParallaxMenuView.xib */,
+				789D08511BEBAE5400783859 /* LTParallaxItem.h */,
+				789D08521BEBAE5400783859 /* LTParallaxItem.m */,
+			);
+			name = "controls view";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F1F7581BEB474D008BD9AF /* LTParallaxMenuView.xib in Resources */,
 				78F1F7301BEB46A5008BD9AF /* LaunchScreen.storyboard in Resources */,
 				78F1F72D1BEB46A5008BD9AF /* Assets.xcassets in Resources */,
 				78F1F72B1BEB46A5008BD9AF /* Main.storyboard in Resources */,
@@ -271,8 +303,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				78F1F7281BEB46A5008BD9AF /* ViewController.m in Sources */,
+				789D08561BEBBF6B00783859 /* ViewController1.m in Sources */,
+				78F1F7561BEB4724008BD9AF /* LTParallaxMenu.m in Sources */,
+				78F1F75E1BEB4B9B008BD9AF /* LTParallaxMenuItem.m in Sources */,
 				78F1F7251BEB46A5008BD9AF /* AppDelegate.m in Sources */,
 				78F1F7221BEB46A5008BD9AF /* main.m in Sources */,
+				789D08531BEBAE5400783859 /* LTParallaxItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +534,7 @@
 				78F1F74C1BEB46A5008BD9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78F1F74D1BEB46A5008BD9AF /* Build configuration list for PBXNativeTarget "UIConceptsTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +543,7 @@
 				78F1F74F1BEB46A5008BD9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78F1F7501BEB46A5008BD9AF /* Build configuration list for PBXNativeTarget "UIConceptsUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +552,7 @@
 				78F1F7521BEB46A5008BD9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

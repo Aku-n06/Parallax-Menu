@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+
+}
+
+- (IBAction)sliderValueChanged:(UISlider *)sender {
+    [self.controlsView setOpenValue:@(sender.value)];
 }
 
 - (void)didReceiveMemoryWarning {
