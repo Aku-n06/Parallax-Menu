@@ -39,7 +39,7 @@
                                 <animations/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
-                                    <segue destination="XGa-dw-wim" kind="showDetail" action="showViewController:sender:" id="nXF-et-Wc1"/>
+                                    <segue destination="XGa-dw-wim" kind="presentation" id="nXF-et-Wc1"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9059"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,87 +14,52 @@
                 <view tag="999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fz-hD-ran" userLabel="ContentView">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                     <subviews>
-                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEc-uV-f05">
-                            <rect key="frame" x="81" y="200" width="50" height="50"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coa-7V-0b5">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <animations/>
-                                    <state key="normal" title="test"/>
-                                </button>
-                            </subviews>
+                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7m-qj-T29" userLabel="Open1">
+                            <rect key="frame" x="66" y="100" width="50" height="50"/>
                             <animations/>
                             <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstItem="coa-7V-0b5" firstAttribute="leading" secondItem="lEc-uV-f05" secondAttribute="leading" id="Ogk-DL-8qW"/>
-                                <constraint firstAttribute="height" constant="50" id="PYN-ml-ahj"/>
-                                <constraint firstAttribute="bottom" secondItem="coa-7V-0b5" secondAttribute="bottom" id="ZBA-OX-2fW"/>
-                                <constraint firstItem="coa-7V-0b5" firstAttribute="top" secondItem="lEc-uV-f05" secondAttribute="top" id="cnj-Wc-CTE"/>
-                                <constraint firstAttribute="width" constant="50" id="kZK-0e-odb"/>
-                                <constraint firstAttribute="trailing" secondItem="coa-7V-0b5" secondAttribute="trailing" id="lAA-xQ-Mkw"/>
+                                <constraint firstAttribute="width" constant="50" id="UXc-We-zpM"/>
+                                <constraint firstAttribute="height" constant="50" id="qTR-hX-RZi"/>
                             </constraints>
                         </view>
-                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVO-Oo-X23">
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEc-uV-f05" userLabel="Open2">
+                            <rect key="frame" x="81" y="200" width="50" height="50"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="PYN-ml-ahj"/>
+                                <constraint firstAttribute="width" constant="50" id="kZK-0e-odb"/>
+                            </constraints>
+                        </view>
+                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ftd-cf-DZU" userLabel="Open3">
+                            <rect key="frame" x="275" y="150" width="50" height="50"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="PPq-LZ-FDk"/>
+                                <constraint firstAttribute="height" constant="50" id="dpQ-sM-Ynu"/>
+                            </constraints>
+                        </view>
+                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVO-Oo-X23" userLabel="Open4">
                             <rect key="frame" x="469" y="200" width="50" height="50"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YD-hT-Cbd">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <animations/>
-                                    <state key="normal" title="test"/>
-                                </button>
-                            </subviews>
                             <animations/>
                             <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="5pf-6E-kBd"/>
                                 <constraint firstAttribute="height" constant="50" id="FeN-QY-ZBI"/>
-                                <constraint firstItem="1YD-hT-Cbd" firstAttribute="leading" secondItem="vVO-Oo-X23" secondAttribute="leading" id="KEd-fe-6Mt"/>
-                                <constraint firstItem="1YD-hT-Cbd" firstAttribute="top" secondItem="vVO-Oo-X23" secondAttribute="top" id="ZDl-5b-FVd"/>
-                                <constraint firstAttribute="trailing" secondItem="1YD-hT-Cbd" secondAttribute="trailing" id="bwf-pX-iGp"/>
-                                <constraint firstAttribute="bottom" secondItem="1YD-hT-Cbd" secondAttribute="bottom" id="hm4-gg-vcb"/>
                             </constraints>
                         </view>
-                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ftd-cf-DZU">
-                            <rect key="frame" x="275" y="150" width="50" height="50"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eta-tD-hQL">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <animations/>
-                                    <state key="normal" title="test"/>
-                                </button>
-                            </subviews>
+                        <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLd-4x-liS" userLabel="Open5">
+                            <rect key="frame" x="484" y="100" width="50" height="50"/>
                             <animations/>
                             <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstItem="eta-tD-hQL" firstAttribute="leading" secondItem="Ftd-cf-DZU" secondAttribute="leading" id="8Le-Rn-OTx"/>
-                                <constraint firstAttribute="width" constant="50" id="PPq-LZ-FDk"/>
-                                <constraint firstItem="eta-tD-hQL" firstAttribute="top" secondItem="Ftd-cf-DZU" secondAttribute="top" id="TjN-BP-VkJ"/>
-                                <constraint firstAttribute="height" constant="50" id="dpQ-sM-Ynu"/>
-                                <constraint firstAttribute="trailing" secondItem="eta-tD-hQL" secondAttribute="trailing" id="kon-3Q-nVe"/>
-                                <constraint firstAttribute="bottom" secondItem="eta-tD-hQL" secondAttribute="bottom" id="lBX-pk-rOS"/>
+                                <constraint firstAttribute="width" constant="50" id="3qf-kJ-QSe"/>
+                                <constraint firstAttribute="height" constant="50" id="cNF-k6-Bui"/>
                             </constraints>
                         </view>
-                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7m-qj-T29">
-                            <rect key="frame" x="66" y="100" width="50" height="50"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63c-wF-YPl">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <animations/>
-                                    <state key="normal" title="test"/>
-                                </button>
-                            </subviews>
-                            <animations/>
-                            <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstItem="63c-wF-YPl" firstAttribute="top" secondItem="B7m-qj-T29" secondAttribute="top" id="0pL-aE-Mg8"/>
-                                <constraint firstAttribute="width" constant="50" id="UXc-We-zpM"/>
-                                <constraint firstAttribute="bottom" secondItem="63c-wF-YPl" secondAttribute="bottom" id="a57-B5-PtL"/>
-                                <constraint firstItem="63c-wF-YPl" firstAttribute="leading" secondItem="B7m-qj-T29" secondAttribute="leading" id="iYL-hZ-Rr1"/>
-                                <constraint firstAttribute="height" constant="50" id="qTR-hX-RZi"/>
-                                <constraint firstAttribute="trailing" secondItem="63c-wF-YPl" secondAttribute="trailing" id="rfD-1b-HnH"/>
-                            </constraints>
-                        </view>
-                        <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRU-6L-18f">
+                        <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRU-6L-18f" userLabel="Close1">
                             <rect key="frame" x="8" y="8" width="50" height="50"/>
                             <animations/>
                             <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -103,7 +68,7 @@
                                 <constraint firstAttribute="width" constant="50" id="nJs-fq-bp0"/>
                             </constraints>
                         </view>
-                        <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUi-pc-PEh">
+                        <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUi-pc-PEh" userLabel="Close2">
                             <rect key="frame" x="66" y="8" width="50" height="50"/>
                             <animations/>
                             <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -112,16 +77,7 @@
                                 <constraint firstAttribute="height" constant="50" id="nws-oo-FqX"/>
                             </constraints>
                         </view>
-                        <view userInteractionEnabled="NO" tag="104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34i-sT-qrW">
-                            <rect key="frame" x="484" y="8" width="50" height="50"/>
-                            <animations/>
-                            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="Hab-Zo-sah"/>
-                                <constraint firstAttribute="width" constant="50" id="RWG-nA-KtZ"/>
-                            </constraints>
-                        </view>
-                        <view alpha="0.5" tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29j-D7-pnf">
+                        <view alpha="0.5" tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29j-D7-pnf" userLabel="Close3">
                             <rect key="frame" x="275" y="8" width="50" height="50"/>
                             <animations/>
                             <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,33 +86,22 @@
                                 <constraint firstAttribute="height" constant="50" id="eXW-Kc-RJX"/>
                             </constraints>
                         </view>
-                        <view tag="105" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVF-rx-TUb">
+                        <view userInteractionEnabled="NO" tag="104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34i-sT-qrW" userLabel="Close4">
+                            <rect key="frame" x="484" y="8" width="50" height="50"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Hab-Zo-sah"/>
+                                <constraint firstAttribute="width" constant="50" id="RWG-nA-KtZ"/>
+                            </constraints>
+                        </view>
+                        <view tag="105" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVF-rx-TUb" userLabel="Close5">
                             <rect key="frame" x="542" y="8" width="50" height="50"/>
                             <animations/>
                             <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="AsO-y9-8pI"/>
                                 <constraint firstAttribute="width" constant="50" id="Wc2-cu-aAP"/>
-                            </constraints>
-                        </view>
-                        <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLd-4x-liS">
-                            <rect key="frame" x="484" y="100" width="50" height="50"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDD-jY-ECg">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <animations/>
-                                    <state key="normal" title="test"/>
-                                </button>
-                            </subviews>
-                            <animations/>
-                            <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="50" id="3qf-kJ-QSe"/>
-                                <constraint firstItem="fDD-jY-ECg" firstAttribute="leading" secondItem="ZLd-4x-liS" secondAttribute="leading" id="DYF-Cb-yw3"/>
-                                <constraint firstAttribute="bottom" secondItem="fDD-jY-ECg" secondAttribute="bottom" id="XmT-lj-F3K"/>
-                                <constraint firstAttribute="height" constant="50" id="cNF-k6-Bui"/>
-                                <constraint firstAttribute="trailing" secondItem="fDD-jY-ECg" secondAttribute="trailing" id="hco-Fx-zbw"/>
-                                <constraint firstItem="fDD-jY-ECg" firstAttribute="top" secondItem="ZLd-4x-liS" secondAttribute="top" id="t4F-r4-moB"/>
                             </constraints>
                         </view>
                     </subviews>

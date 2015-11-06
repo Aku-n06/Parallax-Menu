@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #define HEIGHTOFFSET 200 //height difference from open to close
+#define MENUITEMSELECTED @"menu_item_selected" //notification
 
 @interface LTParallaxMenu : UIView
 

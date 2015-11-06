@@ -62,6 +62,7 @@
     //search in all subviews for menu views (menu items): tag from 1 to 99
     for (UIView *openedItem in [self.contentView subviews]){
         if (openedItem.tag > 0 && openedItem.tag < 100) {
+            
             LTParallaxItem *newItem =[LTParallaxItem new];
             //register start state
             float xOpen = openedItem.frame.origin.x;
@@ -80,13 +81,22 @@
             newItem.xDelta = [NSNumber numberWithFloat:(xOpen - [newItem.xClose floatValue])];
             newItem.yDelta = [NSNumber numberWithFloat:(yOpen - [newItem.yClose floatValue])];
             [animationsArray addObject:newItem];
+            
             //remove prototype view
             [closedItem removeFromSuperview];
+            
+            //add observer to uibutton
+            UITapGestureRecognizer *singleFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(itemClicked:)];
+            [openedItem addGestureRecognizer:singleFingerTap];
         }
     }
     //begin
     [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(beginPosition) userInfo:nil repeats:NO];
     [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(beginShow) userInfo:nil repeats:NO];
+}
+
+- (void)itemClicked:(UITapGestureRecognizer *)recognizer {
+    [[NSNotificationCenter defaultCenter] postNotificationName:MENUITEMSELECTED object:@(recognizer.view.tag)];
 }
 
 #pragma mark - animate
@@ -102,8 +112,13 @@
 }
 
 - (void)setOpenValue:(NSNumber *)multiplier {
+    //resize container
+    self.frame = CGRectMake(self.frame.origin.x,
+                            [self.originY floatValue] - HEIGHTOFFSET * (1 - [multiplier floatValue]),
+                            self.frame.size.width,
+                            self.frame.size.height);
+    //transform controls
     [UIView animateWithDuration:0.1 animations:^{
-        //controls
          for (LTParallaxItem *menuItem in animationsArray){
              UIView *menuView = [self viewWithTag:[menuItem.tagOpen integerValue]];
              menuView.frame = CGRectMake([menuItem.xClose floatValue] + ([menuItem.xDelta floatValue] * [multiplier floatValue]),
@@ -113,12 +128,6 @@
              menuView.alpha = [menuItem.alphaClose floatValue] + ([menuItem.alphaDelta floatValue] * [multiplier floatValue]);
              
          }
-        
-        //resize container
-        self.frame = CGRectMake(self.frame.origin.x,
-                                [self.originY floatValue] - HEIGHTOFFSET * (1 - [multiplier floatValue]),
-                                self.frame.size.width,
-                                self.frame.size.height);
      }];
 }
 
