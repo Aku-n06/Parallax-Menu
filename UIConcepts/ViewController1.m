@@ -50,9 +50,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         UITableViewCell *transparentCell = [tableView dequeueReusableCellWithIdentifier:@"transparentCell" forIndexPath:indexPath];
+        transparentCell.selectionStyle = UITableViewCellSelectionStyleNone;
         return transparentCell;
     }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
